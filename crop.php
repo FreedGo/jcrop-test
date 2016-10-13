@@ -101,26 +101,26 @@ class cutImages
 	/**
 	 *生成png格式图片
 	*/
-	public function generatePng() {
-		$shotname = $this->getShotName();
-		$img_r = imagecreatefrompng($this->filename);
-		$dst_r = imagecreatetruecolor($this->width, $this->height);
-		imagecopyresampled($dst_r, $img_r, 0, 0, $this->x, $this->y, $this->width, $this->height, $this->x1, $this->y1);
-		imagepng($dst_r, $shotname, $this->jpeg_quality);
-		return $shotname;
-	}
+//	public function generatePng() {
+//		$shotname = $this->getShotName();
+//		$img_r = imagecreatefrompng($this->filename);
+//		$dst_r = imagecreatetruecolor($this->width, $this->height);
+//		imagecopyresampled($dst_r, $img_r, 0, 0, $this->x, $this->y, $this->width, $this->height, $this->x1, $this->y1);
+//		imagepng($dst_r, $shotname, $this->jpeg_quality);
+//		return $shotname;
+//	}
 
 	/**
 	 *生成gif格式图片
 	*/
-	public function generateGif() {
-		$shotname = $this->getShotName();
-		$img_r = imagecreatefromgif($this->filename);
-		$dst_r = imagecreatetruecolor($this->width, $this->height);
-		imagecopyresampled($dst_r, $img_r, 0, 0, $this->x, $this->y, $this->width, $this->height, $this->x1, $this->y1);
-		imagegif($dst_r, $shotname, $this->jpeg_quality);
-		return $shotname;
-	}
+//	public function generateGif() {
+//		$shotname = $this->getShotName();
+//		$img_r = imagecreatefromgif($this->filename);
+//		$dst_r = imagecreatetruecolor($this->width, $this->height);
+//		imagecopyresampled($dst_r, $img_r, 0, 0, $this->x, $this->y, $this->width, $this->height, $this->x1, $this->y1);
+//		imagegif($dst_r, $shotname, $this->jpeg_quality);
+//		return $shotname;
+//	}
 }
 
 ?>
